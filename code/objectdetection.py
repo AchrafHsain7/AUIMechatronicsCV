@@ -1,11 +1,3 @@
-# install: 
-# pip install "numpy<2"
-# pip install opencv-contrib-python 
-# pip install cvlib
-# pip install tensorflow==2.10
-
-
-
 import cv2
 
 
