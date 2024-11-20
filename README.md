@@ -1,9 +1,9 @@
 # AUIMechatronicsCV
 
 # Installation:
-pip install "numpy<2"
-pip install opencv-contrib-python 
-pip install tensorflow==2.10
+- pip install "numpy<2"
+- pip install opencv-contrib-python 
+- pip install tensorflow==2.10
 
 
 # References:
