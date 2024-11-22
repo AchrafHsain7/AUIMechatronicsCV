@@ -13,8 +13,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 # Initialize a Webcam object that will be used to opens the webcam
 # index 0 refers to the default webcam
-cap = cv2.VideoCapture(0)
-
+capture = cv2.VideoCapture(0)
 
 # initialize the hand tracking object, and it will be gone at the end of with
 # statement
@@ -24,8 +23,8 @@ with mp_hands.Hands(
     min_tracking_confidence=0.5) as hands:
   
   # Frame processing loop
-  while cap.isOpened():
-    success, image = cap.read() # Capture a single frame from the webcam
+  while capture.isOpened():
+    success, image = capture.read() # Capture a single frame from the webcam
     if not success:
       print("Ignoring empty camera frame.")
       continue
@@ -60,11 +59,11 @@ with mp_hands.Hands(
             mp_drawing_styles.get_default_hand_connections_style())
     
     # Flip the image horizontally for a selfie-view display, then show it
-    cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))
+    cv2.imshow('Hand Detection', cv2.flip(image, 1))
     
     # if ESC key is pressed, close the webcam
     if cv2.waitKey(5) & 0xFF == 27:
       break
 
 # making sure the used resources by Webcam object are released
-cap.release()
+capture.release()
