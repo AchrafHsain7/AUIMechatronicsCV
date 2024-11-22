@@ -9,7 +9,7 @@ Copy the following commands to install the required libraries to run the provide
 pip install opencv-contrib-python
 pip install "numpy<2"
 pip install tensorflow==2.10
-pip install mediapipe
+
 ```
 
 ## For Unix-Based Systems (i.e Linux & MacOS)
