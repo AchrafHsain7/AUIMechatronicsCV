@@ -1,4 +1,5 @@
 # AUIMechatronicsCV
+This repository serves as a reference point for students regarding the projects have done in the Computer Vision workshop by the AUI Mechatronics Club.
 
 # Required Libraries:
 Copy the following commands to install the required libraries to run the provided code:
@@ -18,7 +19,6 @@ pip3 install opencv-python
 pip3 install "numpy<2"
 pip3 install tensorflow==2.10
 ```
-
 
 # References:
 https://github.com/tensorflow/models/blob/master/research/object_detection/data/mscoco_complete_label_map.pbtxt
