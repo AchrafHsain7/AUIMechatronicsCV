@@ -3,7 +3,6 @@ import cv2
 # Provides the pre-trained hand detection and tracking model
 import mediapipe as mp
 
-
 # Offers tools for hand landmark detection and tracking
 mp_hands = mp.solutions.hands
 # Used for drawing landmarks and connections on detected hands.

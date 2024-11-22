@@ -2,9 +2,8 @@ import cv2
 import numpy as np
 
 if __name__ == "__main__":
-
     # reading an image
-    img = cv2.imread("../images/img1.jpg")
+    img = cv2.imread("/Users/houssinchikry/1SecondBrain/2_Areas/Programming_Projects/AUIMechatronicsCV/images/img1.jpg")
     cv2.imshow("Image", img)
     
     #waiting for a key to be pressed: 0 infinitely, other ms?
@@ -16,7 +15,12 @@ if __name__ == "__main__":
     cv2.waitKey(0)
 
     #flipping the image
-    img_flip = cv2.flip(img, 1) #0 for horizentally, 1 for vertically
+    img_flip = cv2.flip(img, 0) #0 for horizentally, 1 for vertically
+    cv2.imshow("flip", img_flip)
+    cv2.waitKey(0)
+    
+    #flipping the image
+    img_flip = cv2.flip(img_flip, 1) #0 for horizentally, 1 for vertically
     cv2.imshow("flip", img_flip)
     cv2.waitKey(0)
 
@@ -103,8 +107,6 @@ if __name__ == "__main__":
         #checking if the keyboard q was pressed
         if cv2.waitKey(20) & 0xFF==ord('q'):
             break
-
-
 
     cap.release()  #releasing the capture
     cv2.destroyAllWindows()
