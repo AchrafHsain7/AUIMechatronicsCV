@@ -6,9 +6,9 @@ if __name__ == "__main__":
     # reading an image
     img = cv2.imread("../images/img1.jpg")
     cv2.imshow("Image", img)
+    
     #waiting for a key to be pressed: 0 infinitely, other ms?
     cv2.waitKey(0)
-    
 
     # #resizing the image
     img_res = cv2.resize(img, (1920, 1080))
@@ -60,13 +60,12 @@ if __name__ == "__main__":
     # blurring an image
     blur_img = cv2.GaussianBlur(img, (3, 3),cv2.BORDER_DEFAULT )
     cv2.imshow("Blured", blur_img)
-    cv2.waitKey(0)  
+    cv2.waitKey(0)
 
     # creating a video
     cap = cv2.VideoCapture("../images/vid1.mp4")
 
     while True:
-
         ret, frame = cap.read()
         if ret == False:
             break
@@ -74,7 +73,7 @@ if __name__ == "__main__":
         frame = cv2.resize(frame, (320, 320))
         cv2.imshow("Video", frame)
 
-        if cv2.waitKey(20) & 0xFF==ord('q'): #checking if the keyboard q was pressed
+        if cv2.waitKey(20) & 0xFF == ord('q'): #checking if the keyboard q was pressed
             break
 
     #Live Camera
@@ -99,15 +98,13 @@ if __name__ == "__main__":
 
         frame = cv2.Canny(frame, 125, 175)
 
-
         cv2.imshow("Camera", frame)
 
-        if cv2.waitKey(20) & 0xFF==ord('q'): #checking if the keyboard q was pressed
+        #checking if the keyboard q was pressed
+        if cv2.waitKey(20) & 0xFF==ord('q'):
             break
 
 
 
     cap.release()  #releasing the capture
     cv2.destroyAllWindows()
-
-
