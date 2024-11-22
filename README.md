@@ -6,16 +6,16 @@ Copy the following commands to install the required libraries to run the provide
 
 ## For Windows
 ```
-pip install -q mediapipe
-pip install opencv-python
+pip install mediapipe
+pip install opencv-contrib-python
 pip install "numpy<2"
 pip install tensorflow==2.10
 ```
 
 ## For Unix-Based Systems (i.e Linux & MacOS)
 ```
-pip3 install -q mediapipe
-pip3 install opencv-python
+pip3 install mediapipe
+pip3 install opencv-contrib-python
 pip3 install "numpy<2"
 pip3 install tensorflow==2.10
 ```
