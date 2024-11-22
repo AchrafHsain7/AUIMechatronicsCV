@@ -50,6 +50,7 @@ if __name__ == "__main__":
                 print(classes)
         
 
+        frame = cv2.resize(frame, (700, 500))
         cv2.imshow("Frame", frame)
 
 
