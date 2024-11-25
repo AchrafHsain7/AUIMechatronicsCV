@@ -1,16 +1,20 @@
 import cv2
-
+import os
 
 
 if __name__ == "__main__":
 
     cap = cv2.VideoCapture(0)
-    cfg = "../config.pbtxt"
-    model = "../model.pb"
 
-    net = cv2.dnn_DetectionModel(model, cfg)
+    base_path = os.path.dirname(os.path.abspath(__file__))
+    cfg_path = os.path.join(base_path, "config.pbtxt")
+    model_path = os.path.join(base_path, "model.pb")
+    labels_path = os.path.join(base_path, "labels.txt")
+
+
+    net = cv2.dnn_DetectionModel(model_path, cfg_path)
     classes = []
-    with open("../labels.txt", "r") as f:
+    with open(labels_path, 'r') as f:
         classes = [line.strip() for line in f.readlines()]
 
 
