@@ -85,7 +85,10 @@ You check if TensorFlow has been installed successfully and works properly by ru
 python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 
-## References:
-- https://github.com/tensorflow/models/blob/master/research/object_detection/data/mscoco_complete_label_map.pbtxt
-- https://drive.google.com/drive/folders/1GrFlJNaQ9eAKcFo9MdBa7lgC0xxl-PRw
-- https://github.com/AchrafHsain7/AUIMechatronicsCVss
+## References & Resources:
+- Hand Detection
+    - Hand Detection Model by Google: [Click to Download](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker)
+- Object Detection
+    - https://github.com/tensorflow/models/blob/master/research/object_detection/data/mscoco_complete_label_map.pbtxt
+    - https://drive.google.com/drive/folders/1GrFlJNaQ9eAKcFo9MdBa7lgC0xxl-PRw
+    - https://github.com/AchrafHsain7/AUIMechatronicsCVss
