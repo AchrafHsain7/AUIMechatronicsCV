@@ -4,7 +4,7 @@ This repository serves as a reference point for students regarding the projects 
 ## Set up
 In order to set up your machine for this workshop, you need to meet the following requirements.
 
-1. Python 3.11.9 or lower
+1. Python 3.11.10 or lower
 2. Pip with Version 20.3 or higher
 3. Libraries (latest version unless it's specified)
     1. OpenCV
